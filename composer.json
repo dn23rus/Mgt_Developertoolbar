@@ -1,0 +1,31 @@
+{
+    "name": "mgt/developer-toolbar",
+    "description": "Mgt_DeveloperToolbar extension for Magento",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Stefan Wieczorek",
+            "email": "stefan.wieczorek@mgt-commerce.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra": {
+        "map": [
+            ["htdocs/app/code/community/Mgt/DeveloperToolbar", "app/code/community/Mgt/DeveloperToolbar"],
+            ["htdocs/app/code/local/Mgt/Base", "app/code/local/Mgt/Base"],
+            ["htdocs/app/design/adminhtml/default/default/layout/mgt_developertoolbar.xml", "app/design/adminhtml/default/default/layout/mgt_developertoolbar.xml"],
+            ["htdocs/app/design/adminhtml/default/default/template", "app/design/adminhtml/default/default/template"],
+            ["htdocs/app/design/frontend/default/default/layout/mgt_developertoolbar.xml", "app/design/frontend/default/default/layout/mgt_developertoolbar.xml"],
+            ["htdocs/app/design/frontend/default/default/template/mgt_developertoolbar", "app/design/frontend/default/default/template/mgt_developertoolbar"],
+            ["htdocs/app/etc/modules/Mgt_Base.xml", "app/etc/modules/Mgt_Base.xml"],
+            ["htdocs/app/etc/modules/Mgt_DeveloperToolbar.xml", "app/etc/modules/Mgt_DeveloperToolbar.xml"],
+            ["htdocs/js/mgt_developertoolbar", "js/mgt_developertoolbar"],
+            ["htdocs/media/mgt_developertoolbar", "media/mgt_developertoolbar"]
+        ],
+        "auto-append-gitignore": true
+    }
+}
